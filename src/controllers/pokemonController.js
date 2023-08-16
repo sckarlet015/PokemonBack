@@ -6,7 +6,7 @@ const URL = "https://pokeapi.co/api/v2/pokemon/";
 async function getFirsAllPokemonAPI() {
   let arrayPokemons = [];
   try {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 50; i++) {
       const pokemonData = await dataPokemon(i);
       const newPokemon = await Pokemon.create(pokemonData);
 
