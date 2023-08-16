@@ -23,8 +23,8 @@ const { getFirsAllPokeApi } = require('./src/handlers/pokemonActivity.js');
 const {getTiposApi} = require("./src/handlers/tipoActivity.js")
 // Syncing all the models at once.
 conn.sync({ force: true }).then(async() => {  
-  // await getTiposApi()
-  // await getFirsAllPokeApi()
+  await getTiposApi()
+  await getFirsAllPokeApi()
   server.listen(3001, () => {
     console.log('%s listening at 3001'); // eslint-disable-line no-console
   });
